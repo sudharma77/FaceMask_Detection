@@ -1,6 +1,6 @@
 absl-py>=1.1.0
 
-anaconda-navigator>=2.1.4
+
 appdirs>=1.4.4
 asgiref>=3.5.2
 astunparse>=1.6.3
