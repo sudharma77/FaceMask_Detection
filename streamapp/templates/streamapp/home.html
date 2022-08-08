@@ -1,0 +1,223 @@
+<!-- <html>
+  <head>
+    <title>Video Live Stream</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1> Video Live Stream By Froyo 1.4</h1>
+        <!-- <img src="{% url 'video_feed' %}"> -->
+<!-- <img src="{% url 'webcam_feed' %}"> -->
+<!-- <img src="{% url 'mask_feed' %}"> ##################-->
+<!--	<img src="{% url 'livecam_feed' %}">-->
+<!-- </div>
+      <div>-
+
+      </div>
+    </div>
+     
+    
+  </body>
+</html> -->
+
+
+
+<!-- ############################################################################################### -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froyo 1.4</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body {
+            background-image: url("{% static 'mysite/image/bg2.jpg' %}");
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .hh {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+        }
+
+        .video1 {
+            height: 100vh;
+            width: 50%;
+            /* border: 3px solid red ; */
+        }
+
+        .para {
+            padding: 20px;
+            font-size: 1.1rem;
+        }
+
+        .video {
+            height: 300px;
+            width: 100%;
+            /* background-color: rgb(64, 60, 60); */
+            /* border: 3px solid red ; */
+        }
+
+        .video2 {
+            height: 100vh;
+            width: 50%;
+            /* border: 3px solid blue ; */
+        }
+
+        .case {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            /* margin-top: 35px; */
+        }
+
+        .case1 {
+
+            height: 250px;
+            width: 50%;
+            /* border: 3px solid red ; */
+        }
+
+        .case2 {
+            height: 250px;
+            width: 50%;
+            /* border: 3px solid red ; */
+        }
+
+        /* about the covid 19  */
+        .about {
+            height: 350px;
+            width: 100%;
+            /* border: 3px solid blue ; */
+        }
+
+        .inst {
+            height: 350px;
+            width: 100%;
+            /* border: 3px solid blue ; */
+        }
+
+        .btn {
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: transparent;
+            color: rgb(135, 135, 241);
+        }
+
+
+        .container1 {
+            display: none;
+            text-align: center;
+            justify-content: center;
+            /* align-items: center;
+            text-align: center; */
+        }
+
+        .al {
+            
+            font-size: xx-large;
+            margin-top: 50%;
+        }
+
+        @media screen and (max-width: 1080px) {
+            .container{
+                
+                display: none;
+            }
+
+            .container1 {
+                display: flex;
+                
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="video1">
+            <div class="hh">
+                <img src="{% static 'mysite/image/df.gif.crdownload' %}" alt="Chania" height="40px" width="40px">
+                <h1>Live stream videos...</h1>
+            </div>
+            <div class="video">
+                <img src="{% url 'mask_feed' %}">
+            </div>
+            <div class="case">
+                <div class="case1">
+                    <h3 style="color: #706a6a; font-size:2.4rem">Total Cases</h3>
+                    <strong style="color:#706a6a; font-size:1.4rem;">54.25 Cr</strong>
+                    <br>
+                    <h3 style="color: red; font-size:2.4rem">Active Cases</h3>
+                    <strong style="color:red ; font-size:1.4rem;">1.84 Cr</strong>
+                </div>
+                <div class="case2">
+                    <h3 style="color: rgb(78, 241, 78); font-size:2.4rem">Recovered Case</h3>
+                    <strong style="color:rgb(14, 95, 14); font-size:1.4rem;">51.77 Cr</strong>
+                    <br>
+                    <h3 style="font-size: 2.4rem;">Deaths Case</h3>
+                    <strong style="font-size: 1.4rem;">63.36 Lac</strong>
+                </div>
+            </div>
+        </div>
+        <div class="video2">
+            <div class="about">
+                <h2>About Covid 19</h2>
+
+                <p class="para">
+                    <strong class="rr">Covid</strong>
+                    Most people infected with the virus will experience mild to moderate respiratory
+                    illness and recover without requiring special treatment. However, some will become
+                    seriously ill and require medical attention. Older people and those with underlying
+                    medical conditions like cardiovascular disease, diabetes, chronic respiratory disease,
+                    or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19
+                    and become seriously ill or die at any age.
+                    Most people infected with the virus will experience mild to moderate respiratory
+                    illness and recover without requiring special treatment. However, some will become
+                    seriously ill and require medical attention. Older people and those with underlying
+                    medical conditions like cardiovascular disease, diabetes, chronic respiratory disease,
+                    or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19
+                    and become seriously ill or die at any age.
+                    The virus can spread from an infected person’s mouth or
+                    nose in small liquid particles when they cough, sneeze,
+                    speak, sing or breathe. These particles range from larger
+                    respiratory droplets to smaller aerosols. It is important to practice respiratory etiquette,
+                    for example by coughing into a flexed elbow, and to stay home and self-isolate until you recover
+                    if you feel unwell.<a href="https://www.who.int/health-topics/coronavirus#tab=tab_3"><button
+                            class="btn">click here....</button></a>
+                </p>
+            </div>
+            <div class="inst">
+                <a href="http://cghealth.nic.in/ehealth/covid19/pages/index.html"><img
+                        src="{% static 'mysite/image/aw4.jpg' %}" alt="xyz" height="300px" width="100%"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="al">
+            <h1>For Good Experience Open It Destop Mode!</h1>
+        </div>
+    </div>
+</body>
+
+</html>
